@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F8FF"
+    tools:context=".MoneyActivity">
+
+    <TextView
+        android:id="@+id/money_head"
+        android:layout_width="300dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/money_headline"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/next_MC_button"
+        android:layout_width="97dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/actor"
+        android:text="@string/next_NM_button"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:id="@+id/money_scroll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:id="@+id/bill_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:drawable/divider_horizontal_textfield"
+            android:showDividers="middle|beginning">
+
+            <TableRow
+                android:id="@+id/connect_row_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="?attr/dividerVertical"
+                android:showDividers="middle">
+
+                <TextView
+                    android:id="@+id/con_dish_head_table"
+                    android:layout_width="190dp"
+                    android:layout_height="40dp"
+                    android:text="@string/dish_table_head"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/con_splitter_head_table"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="@string/price_table_head"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="@string/count_table_head"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/bill_row1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="?attr/dividerVertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:showDividers="middle">
+
+                <EditText
+                    android:id="@+id/dish1"
+                    android:layout_width="190dp"
+                    android:layout_height="40dp"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/dish_input_hint"
+                    android:inputType="textPersonName"
+                    android:tag="DishInput"
+                    android:textAlignment="textStart" />
+
+                <EditText
+                    android:id="@+id/price1"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/price_table_head_hint"
+                    android:inputType="numberDecimal"
+                    android:tag="PriceInput"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/count1"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/count_table_hint"
+                    android:inputType="number"
+                    android:tag="CountInput"
+                    android:text="@string/count_table_default_val"
+                    android:textAlignment="center" />
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="111dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="2dp"
+        android:contentDescription="@string/image4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/coffe" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

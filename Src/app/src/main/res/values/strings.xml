@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Splinter</string>
+    <string name="front_logo">front logo</string>
+    <string name="start_button">Split IT</string>
+    <string name="add_names_button">+</string>
+    <string name="names_headline">Splitters Names</string>
+    <string name="next_NM_button">Next</string>
+    <string name="name_input_hint">Enter name here..</string>
+    <string name="money_headline">Bill Details</string>
+    <string name="dish_table_head">Dish</string>
+    <string name="price_table_head">Price</string>
+    <string name="count_table_head">Count</string>
+    <string name="dish_input_hint">Enter dish here..</string>
+    <string name="price_of_the_dish_acc">price of the dish</string>
+    <string name="price_table_head_hint">price..</string>
+    <string name="count_table_default_val">1</string>
+    <string name="count_table_hint">count..</string>
+    <string name="no_butt_temp">NO</string>
+    <string name="todo_temp">TODO</string>
+    <string name="connect_header">Assign Dishes</string>
+    <string name="con_splitter_table_head">Splitter</string>
+    <string name="summary_head">Summary</string>
+    <string name="finish_button">Back to menu</string>
+    <string name="tip_number" />
+    <string name="tip_text">Tip:</string>
+    <string name="tip_non_splitters">Tip Non Splitters</string>
+    <string name="food1">food1</string>
+    <string name="check_splitter_head">Check Splitter</string>
+    <string name="calculating">Calculating..</string>
+    <string name="fgfdg">fgfdg</string>
+    <string name="image4">image4</string>
+    <string name="food6">food6</string>
+</resources>
